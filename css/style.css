@@ -22,7 +22,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem;
+    grid-gap :38rem;
     padding: 0 2rem;
 }
 
@@ -167,7 +167,7 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, #133bbe, #2937d3, #544bbe);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;

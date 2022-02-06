@@ -22,14 +22,18 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap :38rem;
+    grid-gap :30rem;
     padding: 0 2rem;
+
+	position: relative;
 }
 
 .img{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+
+	position: relative;
 }
 
 .login-content{
@@ -41,6 +45,7 @@ body{
 
 .img img{
 	width: 500px;
+	position: relative;
 }
 
 form{
@@ -103,7 +108,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #38d39f;
+	background-color: #1d23d3;
 	transition: .4s;
 }
 
@@ -125,7 +130,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #38d39f;
+	color: #2b2bd3;
 }
 
 .input-div > div > input{
@@ -157,7 +162,7 @@ a{
 }
 
 a:hover{
-	color: #38d39f;
+	color: #1c1fd3;
 }
 
 .btn{
@@ -219,4 +224,12 @@ a:hover{
 	.login-content{
 		justify-content: center;
 	}
+}
+
+.myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
 }

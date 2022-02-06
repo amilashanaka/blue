@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5fb1d7f-4d33-45f7-ae55-6c468e141bba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/bg23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/blue-telecoms-2020-v1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/video/bg.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
@@ -49,7 +54,8 @@
       <updated>1644036986930</updated>
       <workItem from="1644036988567" duration="2515000" />
       <workItem from="1644062465096" duration="3121000" />
-      <workItem from="1644112918012" duration="4023000" />
+      <workItem from="1644112918012" duration="8887000" />
+      <workItem from="1644148790223" duration="798000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1644117932189</created>

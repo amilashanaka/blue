@@ -10,20 +10,16 @@
 </head>
 <body>
 
-<div class="row"> 
-
-<div class="col-10">
-
-<img  src="assets/img/bg6.jpg">
- 
-
-</div>
-
-<div class="col-2">
-
-<div class="login-content">
-			<form action="controllers/login.php">
-				<img src="assets/img/user.png" style="z-index: -1">
+<div class="vh-100 w-100 d-sm-flex justify-content-start">
+  <div class="position-relative  d-none d-sm-block">
+  		<img class="w-100" src="assets/img/bg6.jpg">
+		<div class="position-absolute top-0 d-flex justify-content-end px-3">
+			<img src="assets/img/blue-telecoms-2020-v1.png" class="w-50">
+		</div>
+  </div>
+  <div class="login-content d-flex justify-content-center align-items-center px-4">
+  		<form action="index.html">
+				<img src="assets/img/user.png">
 				<h2 class="title">Welcome</h2>
            		<div class="input-div one">
            		   <div class="i">
@@ -44,15 +40,10 @@
             	   </div>
             	</div>
             	<a href="#">Forgot Password?</a>
-            	<input type="submit" class="btn" value="Login">
+            	<input type="submit" class="btn text-white" value="Login">
             </form>
-        </div>
-
+  </div>
 </div>
-
-
-</div>
-
 
 <!-- <img class="wave" src="assets/img/bg6.jpg">
 
@@ -64,7 +55,7 @@
 
 		</div>
 		<div class="login-content">
-			<form action="controllers/login.php">
+			<form action="index.html">
 				<img src="assets/img/user.png" style="z-index: -1">
 				<h2 class="title">Welcome</h2>
            		<div class="input-div one">
@@ -90,6 +81,6 @@
             </form>
         </div>
     </div> -->
-  
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

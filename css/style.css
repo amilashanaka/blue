@@ -12,7 +12,6 @@ body{
 .wave{
 	position: fixed;
 	margin-left: 10px;
-
 	bottom: 0;
 	left: 0;
 	height: 100%;
@@ -36,9 +35,7 @@ body{
 }
 
 .login-content{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	
 	text-align: center;
 }
 
@@ -222,6 +219,7 @@ a:hover{
 
 	.login-content{
 		justify-content: center;
+		align-items: center;
 	}
 }
 

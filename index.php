@@ -9,12 +9,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<video autoplay muted loop class="myVideo"  style="z-index:0" >
-    <source src="assets/video/bg.mp4" type="video/mp4">
-</video>
-	<div class="container"  >
+
+<img class="wave" src="assets/img/bg6.jpg">
+
+	<div class="container" style="position: relative">
 		<div class="img" >
 			<img   src="assets/img/blue-telecoms-2020-v1.png">
+
+
+
 		</div>
 		<div class="login-content">
 			<form action="index.html">

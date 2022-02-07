@@ -11,6 +11,8 @@ body{
 
 .wave{
 	position: fixed;
+	margin-left: 10px;
+
 	bottom: 0;
 	left: 0;
 	height: 100%;
@@ -31,9 +33,6 @@ body{
 .img{
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
-
-	position: relative;
 }
 
 .login-content{

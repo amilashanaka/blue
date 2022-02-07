@@ -18,7 +18,7 @@
 		</div>
   </div>
   <div class="login-content d-flex justify-content-center align-items-center px-4">
-  		<form action="index.html">
+  		<form action="controllers/login.php">
 				<img src="assets/img/user.png">
 				<h2 class="title">Welcome</h2>
            		<div class="input-div one">
@@ -27,7 +27,7 @@
            		   </div>
            		   <div class="div">
            		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
+           		   		<input type="text" class="input" name="u_id" id="u_id">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -45,41 +45,7 @@
   </div>
 </div>
 
-<!-- <img class="wave" src="assets/img/bg6.jpg">
 
-	<div class="container" style="position: relative">
-		<div class="img" >
-			<img   src="assets/img/blue-telecoms-2020-v1.png">
-
-
-
-		</div>
-		<div class="login-content">
-			<form action="index.html">
-				<img src="assets/img/user.png" style="z-index: -1">
-				<h2 class="title">Welcome</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
-           		   </div>
-           		   <div class="div">
-           		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
-           		   </div>
-           		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-            	<a href="#">Forgot Password?</a>
-            	<input type="submit" class="btn" value="Login">
-            </form>
-        </div>
     </div> -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>

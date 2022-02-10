@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/inc/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/inc/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/inc/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/inc/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/inc/vendor/composer" />
+    </include_path>
+  </component>
+</project>

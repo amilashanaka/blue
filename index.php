@@ -19,37 +19,73 @@
             <img src="assets/img/blue-telecoms-2020-v1.png" class="w-50 animate__animated animate__bounceInLeft">
         </div>
     </div>
-    <div class="login-content d-flex justify-content-center align-items-center px-4">
-        <form action="controllers/login.php">
-            <img src="assets/img/user.png">
-            <h2 class="title">Welcome</h2>
-            <div class="input-div one">
-                <div class="i">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="div">
-                    <h5>Username</h5>
-                    <input type="text" class="input" name="u_id" id="u_id">
+    <div class="flip-card animate__animated animate__bounceIn ">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="login-content d-flex justify-content-center align-items-center px-4">
+                    <form action="controllers/login.php">
+                        <img src="assets/img/user.png">
+                        <h2 class="title">Welcome</h2>
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Username</h5>
+                                <input type="text" class="input" name="u_id" id="u_id">
+                            </div>
+                        </div>
+                        <div class="input-div pass">
+                            <div class="i">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Password</h5>
+                                <input type="password" class="input">
+                            </div>
+                        </div>
+                        <a href="#">Forgot Password?</a>
+                        <input type="submit" class="btn text-white" value="Login">
+                    </form>
                 </div>
             </div>
-            <div class="input-div pass">
-                <div class="i">
-                    <i class="fas fa-lock"></i>
-                </div>
-                <div class="div">
-                    <h5>Password</h5>
-                    <input type="password" class="input">
+            <div class="flip-card-back">
+                <div class="login-content d-flex justify-content-center align-items-center px-4">
+                    <form action="controllers/login.php">
+
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-email"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Username</h5>
+                                <input type="text" class="input" name="u_id" id="u_id">
+                            </div>
+                        </div>
+                        <div class="input-div pass">
+                            <div class="i">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Password</h5>
+                                <input type="password" class="input">
+                            </div>
+                        </div>
+                        <a href="#">Forgot Password?</a>
+                        <input type="submit" class="btn text-white" value="Login">
+                    </form>
                 </div>
             </div>
-            <a href="#">Forgot Password?</a>
-            <input type="submit" class="btn text-white" value="Login">
-        </form>
+        </div>
     </div>
+
 </div>
+
+
 
 
 </div> -->
 <script type="text/javascript" src="js/main.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

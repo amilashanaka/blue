@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-white">
 <div class="w-full flex items-center justify-start" x-data="{ login_page: true, password_page: false }">
 
     <div class="w-3/4 relative hidden lg:block">

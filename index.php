@@ -1,91 +1,354 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-    <title>Blue Telecoms</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
 
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-<div class="vh-100 w-100 d-sm-flex justify-content-start">
-    <div class="position-relative  d-none d-sm-block">
-        <img class="w-100" src="assets/img/bg6.jpg">
-        <div class="position-absolute top-0 d-flex justify-content-end px-3">
-            <img src="assets/img/blue-telecoms-2020-v1.png" class="w-50 animate__animated animate__bounceInLeft">
+<body class="bg-gray-100">
+<div class="w-full flex items-center justify-start" x-data="{ login_page: true, password_page: false }">
+
+    <div class="w-3/4 relative hidden lg:block">
+        <canvas id="nokey" class="w-full h-screen absolute"></canvas>
+        <img class="w-full h-screen " src="assets/img/bg23.jpg">
+        <div class="absolute top-48 right-48 p-2 animate__animated animate__bounceInLeft">
+            <img src="assets/img/logo.png" class="w-[650px]">
         </div>
     </div>
-    <div class="flip-card animate__animated animate__bounceIn ">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <div class="login-content d-flex justify-content-center align-items-center px-4">
-                    <form action="controllers/login.php">
-                        <img src="assets/img/user.png">
-                        <h2 class="title">Welcome</h2>
-                        <div class="input-div one">
-                            <div class="i">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Username</h5>
-                                <input type="text" class="input" name="u_id" id="u_id">
-                            </div>
-                        </div>
-                        <div class="input-div pass">
-                            <div class="i">
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Password</h5>
-                                <input type="password" class="input">
-                            </div>
-                        </div>
-                        <a href="#">Forgot Password?</a>
-                        <input type="submit" class="btn text-white" value="Login">
-                    </form>
-                </div>
+    <div x-show="login_page" class="flex-1 mx-4 md:mx-16 animate__animated animate__bounceIn">
+        <header>
+            <img class="w-20 mx-auto mb-5" src="assets/img/user.png" />
+        </header>
+        <form>
+            <div>
+                <label class="block mb-2 text-blue-500" for="username"><i class="fa fa-user"></i>  User Name</label>
+                <input
+                        class="w-full p-2 mb-6 text-blue-700 border-b-2 border-blue-500 outline-none focus:bg-gray-300"
+                        type="text" name="u_id">
             </div>
-            <div class="flip-card-back">
-                <div class="login-content d-flex justify-content-center align-items-center px-4">
-                    <form action="controllers/login.php">
+            <div>
+                <label class="block mb-2 text-blue-500" for="password"> <i class="fa fa-key"></i>  Password</label>
+                <input class="w-full p-2 text-blue-700 border-b-2 border-blue-500 outline-none focus:bg-gray-300"
+                       type="password" name="password">
+            </div>
 
-                        <div class="input-div one">
-                            <div class="i">
-                                <i class="fas fa-email"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Username</h5>
-                                <input type="text" class="input" name="u_id" id="u_id">
-                            </div>
-                        </div>
-                        <div class="input-div pass">
-                            <div class="i">
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Password</h5>
-                                <input type="password" class="input">
-                            </div>
-                        </div>
-                        <a href="#">Forgot Password?</a>
-                        <input type="submit" class="btn text-white" value="Login">
-                    </form>
-                </div>
+            <div class="mb-6 float-right">
+                <a class="text-blue-700 hover:text-pink-700 text-sm font-bold" href="#"
+                   @click="password_page = true; login_page = false">Forgot
+                    Password?</a>
             </div>
-        </div>
+            <div>
+                <button
+                        class="w-full bg-blue-700 hover:bg-indigo-700 text-white font-bold py-2 px-4 mb-6 rounded uppercase">Login</button>
+            </div>
+        </form>
     </div>
+    <div x-show="password_page" class="flex-1 mx-4 md:mx-20 animate__animated animate__bounceIn">
+        <header>
+            <img class="w-20 mx-auto mb-5" src="images/user.png" />
+        </header>
+        <form>
+            <div>
+                <label class="block mb-2 text-blue-500" for="username">Email</label>
+                <input class="w-full p-2 text-blue-700 border-b-2 border-blue-500 outline-none focus:bg-gray-300"
+                       type="email" name="email">
+            </div>
 
+            <div class="mb-6 float-right">
+                <a class="text-blue-700 hover:text-pink-700 text-sm font-bold" href="#"
+                   @click="password_page = false; login_page = true">Return to Login?</a>
+            </div>
+            <div>
+                <button
+                        class="w-full bg-blue-700 hover:bg-indigo-700 text-white font-bold py-2 px-4 mb-6 rounded uppercase">Send</button>
+            </div>
+        </form>
+    </div>
 </div>
 
+<script>
+    var canvas = document.getElementById('nokey'),
+        can_w = parseInt(canvas.getAttribute('width')),
+        can_h = parseInt(canvas.getAttribute('height')),
+        ctx = canvas.getContext('2d');
 
+    // console.log(typeof can_w);
+    var BALL_NUM = 60
 
+    var ball = {
+            x: 0,
+            y: 0,
+            vx: 0,
+            vy: 0,
+            r: 0,
+            alpha: 1,
+            phase: 0
+        },
+        ball_color = {
+            r: 207,
+            g: 255,
+            b: 4
+        },
+        R = 2,
+        balls = [],
+        alpha_f = 0.03,
+        alpha_phase = 0,
 
-</div> -->
-<script type="text/javascript" src="js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        // Line
+        link_line_width = 0.8,
+        dis_limit = 260,
+        add_mouse_point = true,
+        mouse_in = false,
+        mouse_ball = {
+            x: 0,
+            y: 0,
+            vx: 0,
+            vy: 0,
+            r: 0,
+            type: 'mouse'
+        };
+
+    // Random speed
+    function getRandomSpeed(pos) {
+        var min = -1,
+            max = 1;
+        switch (pos) {
+            case 'top':
+                return [randomNumFrom(min, max), randomNumFrom(0.1, max)];
+                break;
+            case 'right':
+                return [randomNumFrom(min, -0.1), randomNumFrom(min, max)];
+                break;
+            case 'bottom':
+                return [randomNumFrom(min, max), randomNumFrom(min, -0.1)];
+                break;
+            case 'left':
+                return [randomNumFrom(0.1, max), randomNumFrom(min, max)];
+                break;
+            default:
+                return;
+                break;
+        }
+    }
+    function randomArrayItem(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+    function randomNumFrom(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+    console.log(randomNumFrom(0, 10));
+    // Random Ball
+    function getRandomBall() {
+        var pos = randomArrayItem(['top', 'right', 'bottom', 'left']);
+        switch (pos) {
+            case 'top':
+                return {
+                    x: randomSidePos(can_w),
+                    y: -R,
+                    vx: getRandomSpeed('top')[0],
+                    vy: getRandomSpeed('top')[1],
+                    r: R,
+                    alpha: 1,
+                    phase: randomNumFrom(0, 10)
+                }
+                break;
+            case 'right':
+                return {
+                    x: can_w + R,
+                    y: randomSidePos(can_h),
+                    vx: getRandomSpeed('right')[0],
+                    vy: getRandomSpeed('right')[1],
+                    r: R,
+                    alpha: 1,
+                    phase: randomNumFrom(0, 10)
+                }
+                break;
+            case 'bottom':
+                return {
+                    x: randomSidePos(can_w),
+                    y: can_h + R,
+                    vx: getRandomSpeed('bottom')[0],
+                    vy: getRandomSpeed('bottom')[1],
+                    r: R,
+                    alpha: 1,
+                    phase: randomNumFrom(0, 10)
+                }
+                break;
+            case 'left':
+                return {
+                    x: -R,
+                    y: randomSidePos(can_h),
+                    vx: getRandomSpeed('left')[0],
+                    vy: getRandomSpeed('left')[1],
+                    r: R,
+                    alpha: 1,
+                    phase: randomNumFrom(0, 10)
+                }
+                break;
+        }
+    }
+    function randomSidePos(length) {
+        return Math.ceil(Math.random() * length);
+    }
+
+    // Draw Ball
+    function renderBalls() {
+        Array.prototype.forEach.call(balls, function (b) {
+            if (!b.hasOwnProperty('type')) {
+                ctx.fillStyle = 'rgba(' + ball_color.r + ',' + ball_color.g + ',' + ball_color.b + ',' + b.alpha + ')';
+                ctx.beginPath();
+                ctx.arc(b.x, b.y, R, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.fill();
+            }
+        });
+    }
+
+    // Update balls
+    function updateBalls() {
+        var new_balls = [];
+        Array.prototype.forEach.call(balls, function (b) {
+            b.x += b.vx;
+            b.y += b.vy;
+
+            if (b.x > -(50) && b.x < (can_w + 50) && b.y > -(50) && b.y < (can_h + 50)) {
+                new_balls.push(b);
+            }
+
+            // alpha change
+            b.phase += alpha_f;
+            b.alpha = Math.abs(Math.cos(b.phase));
+            // console.log(b.alpha);
+        });
+
+        balls = new_balls.slice(0);
+    }
+
+    // loop alpha
+    function loopAlphaInf() {
+
+    }
+
+    // Draw lines
+    function renderLines() {
+        var fraction, alpha;
+        for (var i = 0; i < balls.length; i++) {
+            for (var j = i + 1; j < balls.length; j++) {
+
+                fraction = getDisOf(balls[i], balls[j]) / dis_limit;
+
+                if (fraction < 1) {
+                    alpha = (1 - fraction).toString();
+
+                    ctx.strokeStyle = 'rgba(150,150,150,' + alpha + ')';
+                    ctx.lineWidth = link_line_width;
+
+                    ctx.beginPath();
+                    ctx.moveTo(balls[i].x, balls[i].y);
+                    ctx.lineTo(balls[j].x, balls[j].y);
+                    ctx.stroke();
+                    ctx.closePath();
+                }
+            }
+        }
+    }
+
+    // calculate distance between two points
+    function getDisOf(b1, b2) {
+        var delta_x = Math.abs(b1.x - b2.x),
+            delta_y = Math.abs(b1.y - b2.y);
+
+        return Math.sqrt(delta_x * delta_x + delta_y * delta_y);
+    }
+
+    // add balls if there a little balls
+    function addBallIfy() {
+        if (balls.length < BALL_NUM) {
+            balls.push(getRandomBall());
+        }
+    }
+
+    // Render
+    function render() {
+        ctx.clearRect(0, 0, can_w, can_h);
+
+        renderBalls();
+
+        renderLines();
+
+        updateBalls();
+
+        addBallIfy();
+
+        window.requestAnimationFrame(render);
+    }
+
+    // Init Balls
+    function initBalls(num) {
+        for (var i = 1; i <= num; i++) {
+            balls.push({
+                x: randomSidePos(can_w),
+                y: randomSidePos(can_h),
+                vx: getRandomSpeed('top')[0],
+                vy: getRandomSpeed('top')[1],
+                r: R,
+                alpha: 1,
+                phase: randomNumFrom(0, 10)
+            });
+        }
+    }
+    // Init Canvas
+    function initCanvas() {
+        canvas.setAttribute('width', window.innerWidth);
+        canvas.setAttribute('height', window.innerHeight);
+
+        can_w = parseInt(canvas.getAttribute('width'));
+        can_h = parseInt(canvas.getAttribute('height'));
+    }
+    window.addEventListener('resize', function (e) {
+        console.log('Window Resize...');
+        initCanvas();
+    });
+
+    function goMovie() {
+        initCanvas();
+        initBalls(BALL_NUM);
+        window.requestAnimationFrame(render);
+    }
+    goMovie();
+
+    // Mouse effect
+    canvas.addEventListener('mouseenter', function () {
+        console.log('mouseenter');
+        mouse_in = true;
+        balls.push(mouse_ball);
+    });
+    canvas.addEventListener('mouseleave', function () {
+        console.log('mouseleave');
+        mouse_in = false;
+        var new_balls = [];
+        Array.prototype.forEach.call(balls, function (b) {
+            if (!b.hasOwnProperty('type')) {
+                new_balls.push(b);
+            }
+        });
+        balls = new_balls.slice(0);
+    });
+    canvas.addEventListener('mousemove', function (e) {
+        var e = e || window.event;
+        mouse_ball.x = e.pageX;
+        mouse_ball.y = e.pageY;
+        // console.log(mouse_ball);
+    });
+</script>
 </body>
+
 </html>

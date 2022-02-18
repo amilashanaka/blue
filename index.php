@@ -25,7 +25,7 @@
         <header>
             <img class="w-20 mx-auto mb-5" src="assets/img/user.png"/>
         </header>
-        <form method="post" class="login-form" id="login_form">
+        <form method="post" action="controllers/login.php" class="login-form" id="login_form">
             <div>
                 <label class="block mb-2 text-blue-500" for="username"><i class="fa fa-user"></i> User Name</label>
                 <input

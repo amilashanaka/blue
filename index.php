@@ -15,17 +15,17 @@
 <div class="w-full flex items-center justify-start" x-data="{ login_page: true, password_page: false }">
 
     <div class="w-3/4 relative hidden lg:block">
-        <canvas id="nokey" class="w-full h-screen absolute"></canvas>
-        <img class="w-full h-screen " src="assets/img/bg23.jpg">
+        <canvas id="nokey" class="w-full h-screen glyphicon-tint  absolute" ></canvas>
+        <img class="w-full h-screen " style=" opacity: 5;" src="assets/img/bg23.jpg">
         <div class="absolute top-48 right-48 p-2 animate__animated animate__bounceInLeft">
             <img src="assets/img/logo.png" class="w-[650px]">
         </div>
     </div>
-    <div x-show="login_page" class="flex-1 mx-4 md:mx-16 animate__animated animate__bounceIn">
+    <div x-show="login_page" class="flex-1 mx-4 md:mx-16 animate__animated animate__flipInY">
         <header>
             <img class="w-20 mx-auto mb-5" src="assets/img/user.png"/>
         </header>
-        <form>
+        <form method="post" class="login-form" id="login_form">
             <div>
                 <label class="block mb-2 text-blue-500" for="username"><i class="fa fa-user"></i> User Name</label>
                 <input
@@ -35,7 +35,7 @@
             <div>
                 <label class="block mb-2 text-blue-500" for="password"> <i class="fa fa-key"></i> Password</label>
                 <input class="w-full p-2 text-blue-700 border-b-2 border-blue-500 outline-none focus:bg-gray-300"
-                       type="password" name="password">
+                       type="password" name="u_pass">
             </div>
 
             <div class="mb-6 float-right">
@@ -51,9 +51,9 @@
             </div>
         </form>
     </div>
-    <div x-show="password_page" class="flex-1 mx-4 md:mx-20 animate__animated animate__bounceIn">
+    <div x-show="password_page" class="flex-1 mx-4 md:mx-20 animate__animated animate__flipInY">
         <header>
-            <img class="w-20 mx-auto mb-5" src="images/user.png"/>
+            <img class="w-20 mx-auto mb-5" src="assets/img/user.png"/>
         </header>
         <form>
             <div>

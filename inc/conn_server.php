@@ -1,6 +1,6 @@
 <?php
 
-date_default_timezone_set("Asia/Kuala_Lumpur");
+date_default_timezone_set("Europe/London");
 error_reporting(0);
 @ini_set('display_errors', 0);
 
@@ -8,10 +8,10 @@ error_reporting(0);
 
 define("DB_SERVER", "localhost");
 
-define("DB_USER", "bay_db");
-define("DB_PASS", "Bay@2021");
-define("DB_NAME", "bay_db");
-define('APP_NAME', 'Bay Wash');
+define("DB_USER", "root");
+define("DB_PASS", "");
+define("DB_NAME", "bts");
+define('APP_NAME', 'Blue Telecoms');
 
 $email_username = "admin@baywash.com.my";
 $email_from_name = "Bay Wash";

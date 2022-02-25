@@ -8,8 +8,8 @@ error_reporting(0);
 
 define("DB_SERVER", "localhost");
 
-define("DB_USER", "root");
-define("DB_PASS", "");
+define("DB_USER", "cron");
+define("DB_PASS", "Yabradru0rig");
 define("DB_NAME", "bts");
 define('APP_NAME', 'Blue Telecoms');
 

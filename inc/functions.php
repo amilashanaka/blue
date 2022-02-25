@@ -1722,9 +1722,11 @@ function get_user_type($u_username, $token)
 
     $arr = json_decode($response, true);
 
+    $arra = $arr['data'];
+
 
     curl_close($curl);
-    return $arr['data'];
+    return $arra['u_type'];
 
 
 }

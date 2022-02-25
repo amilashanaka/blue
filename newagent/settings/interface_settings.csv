@@ -1,0 +1,10 @@
+btx_search_control,on
+btx_timers_control,on
+btx_gmaps_weather,on
+btx_log_control,on
+btx_DNC_control,on
+btx_expand_script_control,on
+btx_edit_profile_control,on
+btx_diary_button_control,on
+btx_ringing_control,off
+btx_extend_callback_display,off

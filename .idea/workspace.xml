@@ -4,7 +4,8 @@
     <list default="true" id="c5fb1d7f-4d33-45f7-ae55-6c468e141bba" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/conn_server.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,17 @@
       <workItem from="1644724772076" duration="3077000" />
       <workItem from="1645098002107" duration="1816000" />
       <workItem from="1645121064699" duration="3466000" />
-      <workItem from="1645159013138" duration="4635000" />
+      <workItem from="1645159013138" duration="5231000" />
+      <workItem from="1645189549633" duration="5773000" />
+      <workItem from="1645241945693" duration="299000" />
+      <workItem from="1645242251540" duration="2000" />
+      <workItem from="1645604861027" duration="1896000" />
+      <workItem from="1645675736287" duration="1231000" />
+      <workItem from="1645709561567" duration="662000" />
+      <workItem from="1645717527561" duration="1894000" />
+      <workItem from="1645719533804" duration="1607000" />
+      <workItem from="1645774301656" duration="1305000" />
+      <workItem from="1645776494307" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1644117932189</created>

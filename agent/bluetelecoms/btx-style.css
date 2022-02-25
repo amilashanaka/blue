@@ -1,0 +1,493 @@
+/* --------------------------------------------- */
+/* LOADING SCREEN
+/* --------------------------------------------- */
+
+#loadingscreen{
+	background: #0E2F44;
+	z-index:5000 !important;
+	height: 100vh !important;
+}
+
+#logout-div{
+	z-index:8000 !important;
+}
+.welcome{
+	text-align: center;
+	color: #ccc;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.loader {
+	position: absolute;
+	top: calc(50% - 20%);
+	left: calc(50% - 120px);
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	perspective: 800px;
+}
+
+.inner {
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;  
+}
+
+.inner.one {
+	left: 0%;
+	top: 0%;
+	animation: rotate-one 1s linear infinite;
+	border-bottom: 6px solid #EFEFFA;
+}
+
+.inner.two {
+	right: 0%;
+	top: 0%;
+	animation: rotate-two 1s linear infinite;
+	border-right: 6px solid #EFEFFA;
+}
+
+.inner.three {
+	right: 0%;
+	bottom: 0%;
+	animation: rotate-three 1s linear infinite;
+	border-top: 6px solid #EFEFFA;
+}
+
+@keyframes rotate-one {
+	0% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@keyframes rotate-two {
+	0% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@keyframes rotate-three {
+	0% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}
+
+/* --------------------------------------------- */
+/* LAYOUT > Login Screen */
+/* --------------------------------------------- */
+
+.logout1{
+	background: #064384;
+	color: white;
+	z-index: 700;
+}
+.loginfooter {
+	position: absolute;bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #121F1F;
+	color: white;
+	font-size: 12px;
+}
+.licensee{
+	color: yellow;
+}
+
+#main-login-body{
+	position: fixed;
+	z-index: 9 !important;
+	width: 100%;
+}
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #122333;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.CloserStart{
+	background-color: #0E2F44 !important;
+	color: white !important;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:2000;
+	width:100%;
+	height:100%;
+}
+
+/* --------------------------------------------- */
+/* LAYOUT > Navigation */
+/* --------------------------------------------- */
+
+.nav-buttons{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav-logo{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav-status{
+	height: 100% !important;
+	width: 100% !important;
+	text-align: right !important;
+	position: absolute !important;
+}
+.nav-company{
+	color: white!important;
+}
+
+
+.flash-button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+
+/* --------------------------------------------- */
+/* Agent Status buttons
+/* --------------------------------------------- */
+
+
+
+.btx_pause_timer, .btx_call_timer, .btx_dispo_timer, .btx_mandial_timer {
+	font-size: 24px !important;
+	color: red !important;
+}
+
+
+.btx_agent_status_buttons {
+	font-size: 12px !important;
+	line-height: 20px !important;
+
+}
+
+.btn-ready{
+	background-color: #064384 !important;
+	color: white !important;
+}
+
+.btn-square{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.btn-square2{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+/* --------------------------------------------- */
+/* TIDY THESE */
+/* --------------------------------------------- */
+
+
+#CallLogSpancustom {
+	font-size: 14px !important;
+	width: 100%;
+}
+
+.btx-agentstatus .btn{
+	height: 100% !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+	display: inline-block;
+}
+
+.navbar-brand {
+	padding: 0px;
+}
+.navbar-brand>img {
+	height: 100%;
+	padding: 0px;
+	width: auto;
+}
+/* .modal-backdrop.fade.show{
+	display:none !important;
+	}*/
+	.bt-overlay{
+		position:fixed;
+		top:0;
+		left:0;
+		background: #ECE9E6;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		z-index:501 !important;
+		width:100%;
+		height:100%;
+	}
+	.bt-content{
+		z-index:502 !important;
+		position:fixed;
+		padding-top: 70px;
+		top:0;
+		left:0;
+		background: #ECE9E6;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		width: 100%;
+		height: 100%;
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 45px;
+		line-height: 45px; 
+		z-index: 503 !important;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		background-color: #0E2F44;
+		font-size: 12px;
+		/*text-align: center;*/
+		color: white;
+	}
+
+
+	.footer-left {
+
+	}
+
+
+	.footer-right {
+		text-align: right !important;
+		vertical-align: middle !important;
+	}
+
+	.blue-brand{
+		background-color: #0E2F44 !important;
+	}
+	.blue-brand2{
+		background-color: #122333 !important;
+		color: white !important;
+	}
+	.blue-control{
+		background-color: #FFFFFF;
+
+	}
+	.btn-outline-brand {
+		color: #0E2F44;
+		background-color: transparent;
+		background-image: none;
+		border-color: #0E2F44;
+	}
+	.btn-outline-brand:hover {
+		color: white;
+		background-color: #0E2F44;
+		background-image: none;
+		border-color: #0E2F44;
+	}
+	.btn-outline-brand:active {
+		color: white;
+		background-color: #0E2F44;
+		background-image: none;
+		border-color: #0E2F44;
+	}
+	.btn-white{
+		background-color: white;
+	}
+	.text-small{
+		font-size: 75%;
+	}
+	.hidden {
+		display:none;
+	}
+	.callstat-incall {
+		padding-top: 5px;
+		background-color: #5cb85c;
+		color: white;
+		text-align: center;
+	}
+	/* from 31 to 89 dispos */
+	.dispos_31_89{
+		width: 280%;
+		margin-left: -90%;
+	}
+
+	/* from 15 to 30 dispos */
+	.dispos_15_30{
+		width: 150%;
+		margin-left: -25%;
+	}
+	/* from 0 to 14 dispos */
+	.dispos_0_14{
+		width: 150%;
+		margin-left: -25%;
+	}
+	/* Classes for the different dispo column buttons, they start from 0 to 6 and then just loop back to 0 */
+	.btx_dispo_colors_0{
+		background-color: #CC3636; /* RED - DEAD */
+	}
+	.btx_dispo_colors_1{
+		background-color: #ffbb33; /* ORANGE  */
+	}
+	.btx_dispo_colors_2{
+		background-color: #28a745; /* GREEN - SUCCESS  */
+	}
+	.btx_dispo_colors_3{
+		background-color: #33b5e5; /* BLUE  - RECYCLE*/
+	}
+	.btx_dispo_colors_4{
+		background-color: #4B515D; /* GREY - TRX */
+	}
+	.btx_dispo_colors_5{
+		background-color: #3F729B; /* DARK BLUE  */
+	}
+	.btx_dispo_colors_6{
+		background-color: ##aa66cc; /* PURPLE  */
+	}
+	/* white color text for all button in dispo screen */
+	.btx_dispo_buttons {
+		color: #ffffff !important;
+		border-color: #ffffff !important;
+	}
+	.btx_dispo_buttons:focus, .btx_dispo_buttons:active, .btx_dispo_buttons:hover{
+		background-color: #000000;
+	}
+
+
+.sidebaroverlaychat{
+    width: 650px;
+    position: fixed;
+    bottom: calc(0% + 45px);
+    right: 0;
+    height: 460px;
+  overflow: hidden;
+     	float: right;
+    z-index:2001;
+}	
+
+
+.sidebaroverlay{
+    width: 250px;
+    position: fixed;
+    top: 51px;
+    right: 0;
+    height: calc(100% - 95px);
+  overflow: auto;
+     	float: right;
+    z-index:2000;
+    
+
+}
+
+.sidebaroverlayagents{
+    width: 250px;
+    position: fixed;
+    top: 51px;
+    right: 0;
+    height: calc(100% - 95px);
+  overflow: auto;
+     	float: right;
+    z-index:2000;
+    
+
+}	
+	.inbound-number{color:#565656;}
+	.inbound-name{color:#a8a6a6;}
+	
+
+
+
+	.btn-group-xs > .btn, .btn-xs {
+		padding: .25rem .4rem;
+		font-size: .875rem;
+		line-height: .5;
+		border-radius: .2rem;
+	}
+
+
+	.dtmf-box{
+
+		text-align: center;
+	}
+	.dtmf-text {
+		font-size: 10pt;
+		text-align: center;
+	}
+	.dtmf-number {
+		font-size: 20pt;
+		text-align: center;
+	}
+	.dtmf-button-inactive{
+		margin-top: 5px;
+		margin-right: 5px;
+		background-color: #f8f9fa!important;
+		color: black!important;
+		text-align: center;
+	}
+	.dtmf-button-active{
+		margin-top: 5px;
+		margin-right: 5px;
+		background-color: #28a745!important;
+		color: white!important;
+		text-align: center;
+	}
+
+
+
+	.hotkeyspopups {
+		position: absolute;
+		z-index: 609;
+		width: 90%;
+		background-color: #ffffff;
+		border: 1px solid #d3d3d3;
+		top: 75%;
+		left: 5%;
+		padding: .4rem;
+	}
+

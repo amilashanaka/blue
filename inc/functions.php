@@ -1709,7 +1709,7 @@ function get_user_type($u_username, $token)
         CURLOPT_CUSTOMREQUEST => 'POST',
         CURLOPT_POSTFIELDS => '{
 
-"u_username":"' . $u_username . '"
+"u_username":"sasagent8"
 }',
         CURLOPT_HTTPHEADER => array(
             'Authorization:  Bearer  ' . $token,
@@ -1726,7 +1726,7 @@ function get_user_type($u_username, $token)
 
 
     curl_close($curl);
-    return $arra['u_type'];
+    return $arra[0]['u_type'];
 
 
 }

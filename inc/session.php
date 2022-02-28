@@ -1,7 +1,7 @@
 <?php
 
 if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
-include_once '../inc/functions.php';
+include_once './functions.php';
 
 $today= date("Y-m-d H:i:s"); 
 
@@ -12,7 +12,7 @@ $today= date("Y-m-d H:i:s");
 //    header('Location: login.php');
 //    exit();
 //}
-//
+
 //if ($_SESSION['login'] == '') {
 //
 //    include_once '../inc/del_session.php';

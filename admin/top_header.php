@@ -3,8 +3,6 @@
 <?php 
 
     include_once './session.php';
-    include_once '../common.php';
-    include_once '../conn.php';
     include_once '../inc/functions.php';
     include_once '../inc/database.php';
 

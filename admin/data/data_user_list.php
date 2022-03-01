@@ -12,10 +12,3 @@ if (isset($_GET['u_type'])) {
 
 
 
-    $sql = "select * from users where u_type='".$u_type."' ORDER BY u_id DESC";
-
-
-$result = mysqli_query($conn, $sql);
-
-
-

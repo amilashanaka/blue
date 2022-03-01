@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        <?=$lang['System Name']?>
+        BlueTelecoms
     </title>
 
     <!-- Theme style -->

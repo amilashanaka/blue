@@ -23,17 +23,17 @@
                         </p>
                     </a>
                 </li>
-                <?php if ($_SESSION['login_type'] < 2) { ?>
-                    <li class="nav-item ">
-                        <a href="admin_list.php" class="nav-link">
-                            <i class="nav-icon fas fa-users"></i>
-                            <p>
-                                ADMIN USER
-                            </p>
-                        </a>
-
-                    </li>
-                <?php } ?>
+<!--                --><?php //if ($_SESSION['login_type'] < 2) { ?>
+<!--                    <li class="nav-item ">-->
+<!--                        <a href="admin_list.php" class="nav-link">-->
+<!--                            <i class="nav-icon fas fa-users"></i>-->
+<!--                            <p>-->
+<!--                                ADMIN USER-->
+<!--                            </p>-->
+<!--                        </a>-->
+<!---->
+<!--                    </li>-->
+<!--                --><?php //} ?>
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
@@ -42,12 +42,23 @@
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
+
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="user_list.php?u_type=<?= base64_encode(2) ?>" class="nav-link"
                                style="font-size: 13px;">
                                 <i class="far fa-user nav-icon"></i>
-                                <p>Members</p>
+                                <p>Superusers</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="user_list.php?u_type=<?= base64_encode(2) ?>" class="nav-link"
+                               style="font-size: 13px;">
+                                <i class="far fa-user nav-icon"></i>
+                                <p>Admins</p>
                             </a>
                         </li>
 
@@ -58,7 +69,7 @@
                             <a href="user_list.php?u_type=<?= base64_encode(1) ?>" class="nav-link"
                                style="font-size: 13px;">
                                 <i class="far fa-user nav-icon"></i>
-                                <p>Customer</p>
+                                <p>Agents</p>
                             </a>
                         </li>
 
@@ -89,7 +100,7 @@
                     <a href="product_list.php" class="nav-link">
                         <i class="nav-icon fas fa-boxes"></i>
                         <p>
-                            PRODUCTS
+                            CAMPAIGNS
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -97,7 +108,18 @@
                         <li class="nav-item">
                             <a href="product_list.php" class="nav-link" style="font-size: 13px;">
                                 <i class="nav-icon fas fa-file-alt"></i>
-                                <p>List</p>
+                                <p>Active Campaigns</p>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="product_list.php" class="nav-link" style="font-size: 13px;">
+                                <i class="nav-icon fas fa-file-alt"></i>
+                                <p>History List</p>
                             </a>
                         </li>
 
@@ -107,9 +129,9 @@
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link" style="font-size: 13px;">
-                        <i class="nav-icon fas fa-wrench"></i>
+                        <i class="nav-icon fas fa-terminal"></i>
                         <p>
-                            SERVICES
+                            SCRIPTS
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -128,9 +150,9 @@
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-car"></i>
+                        <i class="nav-icon fas fa-newspaper"></i>
                         <p>
-                            VEHICLES
+                            REPORTING
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>

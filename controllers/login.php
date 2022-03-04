@@ -9,13 +9,14 @@ $api_user="admin@bluetelecoms.com";
 $api_pass="admin@2021";
 
 
+$token=get_access_token($api_user,$api_pass);
 
+var_dump($token);
+exit();
 
 if(user_login($u_id, $u_pass)){
     $token=get_access_token($api_user,$api_pass);
 
-    var_dump($token);
-    exit();
 
 //    if ($_SESSION['SecKey'] == '') {
 //        $_SESSION['login'] = $res['a_id'];

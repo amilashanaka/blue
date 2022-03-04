@@ -6,6 +6,6 @@ error_reporting(0);
 
 
 
-define("BASE_URL", "http://localhost/");
+define("BASE_URL", "https://dev10.bluetelecoms.com/");
 
 

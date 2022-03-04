@@ -11,8 +11,7 @@ $api_pass="admin@2021";
 
 
 
-var_dump(user_login($u_id, $u_pass));
-exit();
+
 
 if(user_login($u_id, $u_pass)){
     $token=get_access_token($api_user,$api_pass);

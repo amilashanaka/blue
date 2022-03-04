@@ -1738,7 +1738,7 @@ function user_login($u_username, $u_password)
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'http://localhost/blue_api/user/login',
+        CURLOPT_URL => BASE_URL.'blue_api/user/login',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,

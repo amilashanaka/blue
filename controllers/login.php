@@ -9,9 +9,9 @@ $api_user="admin@bluetelecoms.com";
 $api_pass="admin@2021";
 
 
-$token=get_access_token($api_user,$api_pass);
 
-var_dump($token);
+
+var_dump(user_login($u_id, $u_pass));
 exit();
 
 if(user_login($u_id, $u_pass)){

@@ -14,6 +14,9 @@ $api_pass="admin@2021";
 if(user_login($u_id, $u_pass)){
     $token=get_access_token($api_user,$api_pass);
 
+    var_dump($token);
+    exit();
+
 //    if ($_SESSION['SecKey'] == '') {
 //        $_SESSION['login'] = $res['a_id'];
 //        $_SESSION['login_name'] = $res['a_username'];

@@ -1,5 +1,5 @@
 <?php
-include_once '../inc/session.php';
+//include_once '../inc/session.php';
 include_once '../inc/functions.php';
 
 $u_id  = $_POST['u_id'];

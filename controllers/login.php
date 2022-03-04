@@ -29,6 +29,9 @@ if(user_login($u_id, $u_pass)){
 
     $user_type=get_user_type($u_id,$token);
 
+    var_dump($user_type);
+    exit();
+
     if($user_type==1){
 
 

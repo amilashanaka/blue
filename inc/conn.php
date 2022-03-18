@@ -10,7 +10,7 @@ define("DB_SERVER", "localhost");
 
 define("DB_USER", "cron");
 define("DB_PASS", "Yabradru0rig");
-define("DB_NAME", "bts");
+define("DB_NAME", "blue");
 define('APP_NAME', 'Blue Telecoms');
 
 $email_username = "admin@baywash.com.my";

@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Lotto System">
   <meta name="keywords" content="bootstrap, admin, dashboard, flat admin template, responsive," />
-  <title><?=$lang['System Name']?></title>
+  <title>Blue Telecoms</title>
   <script src="dist/js/sweet-alert/sweet-alert.min.js" type="text/javascript"></script>
   
   

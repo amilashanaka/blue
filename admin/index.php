@@ -1,6 +1,8 @@
 <?php
 include_once './top_header.php';
 
+
+
 if (isset($_GET['error']))
 {
     $error = $_GET['error'];

@@ -16,8 +16,8 @@ if (isset($_GET['error'])) {
     <form action="data/data_login.php" method="post">
         <div class="top">
             <img src="dist/img/kode-icon.png" alt="icon" class="icon">
-            <h2><?=$lang['System Section']?></h2>
-            <h4><?=$lang['SYSTEM']?></h4>
+            <h2>Blue Telecoms</h2>
+            <h4>SYSTEM></h4>
 
 
             <?php if ($error != '') { ?>

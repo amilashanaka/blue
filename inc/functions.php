@@ -1709,7 +1709,7 @@ function get_user_type($u_username, $token)
         CURLOPT_CUSTOMREQUEST => 'POST',
         CURLOPT_POSTFIELDS => '{
 
-"u_username":"' . $u_username . '"
+"u_username":"'.$u_username.'"
 }',
         CURLOPT_HTTPHEADER => array(
             'Authorization:  Bearer  ' . $token,
@@ -1726,7 +1726,7 @@ function get_user_type($u_username, $token)
 
 
     curl_close($curl);
-    return $arra['u_type'];
+    return $arra[0]['u_type'];
 
 
 }
@@ -1738,7 +1738,7 @@ function user_login($u_username, $u_password)
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'http://localhost/blue_api/user/login',
+        CURLOPT_URL => BASE_URL.'blue_api/user/login',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
